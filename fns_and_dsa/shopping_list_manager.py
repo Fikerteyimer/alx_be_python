@@ -12,15 +12,15 @@ def main():
         try:
             choice = int(input("Enter your choice: "))
         except ValueError:
-            print("Invalid choice. Enter a number between 1 and 4.")
+            print("Invalid choice. Please enter a number between 1 and 4.")
             continue
 
         if choice == 1:
-            item = input("Enter item to add: ").strip()
+            item = input("Enter the item to add: ").strip()
             shopping_list.append(item)
             print(f"{item} added.")
         elif choice == 2:
-            item = input("Enter item to remove: ").strip()
+            item = input("Enter the item to remove: ").strip()
             if item in shopping_list:
                 shopping_list.remove(item)
                 print(f"{item} removed.")
